@@ -771,7 +771,7 @@ body {
     }
 
     &__single {
-      max-width: 150px;
+      max-width: 125px;
     }
 
     &__single-image {
@@ -1068,12 +1068,12 @@ body {
         margin: 0 auto;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 600px;
+        // max-width: 600px;
         gap: 30px;
         margin-bottom: 40px;
       }
       &__single {
-        min-width: 200px;
+        min-width: 125px;
       }
       &__single-title {
         min-height: 70px;
@@ -1227,7 +1227,7 @@ body {
       }
 
       &__img--desktop {
-        margin-top: -90px;
+        margin-top: -60px;
       }
     }
   }
@@ -1382,6 +1382,14 @@ body {
             font-size: 200px;
           }
         }
+      }
+      &__link {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        min-width: auto;
+        width: 200px;
+        font-size: 12px;
+        border-radius: 30px;
       }
     }
 
