@@ -311,8 +311,8 @@ body {
       &::before {
         content: '';
         position: absolute;
-        top: -22%;
-        right: -9%;
+        top: -20%;
+        right: -4%;
         width: 90%;
         height: 166px;
         background-image: url('./images/handle.png');
@@ -345,6 +345,9 @@ body {
 
       &--mobile {
         max-width: 208px;
+      }
+      &--desktop {
+        display: none;
       }
       &--mobile-big {
         // margin-top: -65px;
@@ -479,9 +482,13 @@ body {
       @include img;
       max-height: 290px;
       max-width: 220px;
+
+      &--3 {
+        margin-right: -50px;
+      }
     }
     &__single {
-      max-width: 270px;
+      max-width: 275px;
       margin-bottom: 40px;
       padding: 0 8px;
       display: flex;
@@ -896,6 +903,17 @@ body {
     }
   }
 
+  @media screen and (min-width: 360px) {
+    .es-ingr {
+      &__container {
+        &::before {
+          top: -20%;
+          right: 0%;
+        }
+      }
+    }
+  }
+
   @media screen and (min-width: 400px) {
     .es-kv {
       &__content {
@@ -912,6 +930,14 @@ body {
         }
       }
     }
+    .es-ingr {
+      &__container {
+        &::before {
+          top: -16%;
+          right: calc(100vw - 84%);
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 450px) {
@@ -922,6 +948,14 @@ body {
         }
         &--3 {
           margin-left: 26%;
+        }
+      }
+    }
+    .es-ingr {
+      &__container {
+        &::before {
+          top: -21%;
+          right: calc(100vw - 85%);
         }
       }
     }
@@ -939,9 +973,14 @@ body {
         }
       }
     }
-  }
-
-  @media screen and (min-width: 500px) {
+    .es-ingr {
+      &__container {
+        &::before {
+          top: -19%;
+          right: calc(100vw - 82%);
+        }
+      }
+    }
     .es-info {
       &__text {
         &--2 {
@@ -1059,6 +1098,14 @@ body {
   }
 
   @media screen and (min-width: 600px) {
+    .es-ingr {
+      &__container {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
     .es-slick-carousel--mobile,
     .slick-button-prev,
     .slick-button-next,
@@ -1083,6 +1130,14 @@ body {
       &__img {
         max-width: 200px;
         margin-bottom: 30px;
+
+        &--mobile {
+          display: none;
+        }
+
+        &--desktop {
+          display: block;
+        }
 
         &--2,
         &--3 {
@@ -1336,6 +1391,7 @@ body {
         }
         &--3 {
           max-width: 280px;
+          margin-right: 0;
         }
       }
       &__packshot {
