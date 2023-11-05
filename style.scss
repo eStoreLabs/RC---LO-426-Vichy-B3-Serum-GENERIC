@@ -176,9 +176,9 @@ body {
       }
     }
     &__wrapper {
-      min-height: 382px;
-      background: #fff url(images/info-image.png) -190px -20px no-repeat;
-      background-size: contain;
+      min-height: 257px;
+      background: #fff url('images/info-image-mobile.png') 0px 0px no-repeat;
+      background-size: auto;
     }
 
     &__steps {
@@ -203,6 +203,7 @@ body {
         margin-left: 10%;
 
         &::before {
+          display: none;
           content: '';
           width: 30px;
           height: 30px;
@@ -213,9 +214,10 @@ body {
         }
       }
       &--2 {
-        margin-left: 35%;
+        margin-left: 30%;
 
         &::before {
+          display: none;
           content: '';
           width: 30px;
           height: 30px;
@@ -226,10 +228,10 @@ body {
         }
       }
       &--3 {
-        margin-top: 70px;
-        margin-left: 38%;
+        margin-left: 29%;
 
         &::before {
+          display: none;
           content: '';
           width: 30px;
           height: 30px;
@@ -240,10 +242,10 @@ body {
         }
       }
       &--4 {
-        margin-top: 60px;
         margin-left: 15%;
 
         &::before {
+          display: none;
           content: '';
           width: 30px;
           height: 30px;
@@ -332,9 +334,6 @@ body {
       &:not(:last-child) {
         margin-bottom: 32px;
       }
-      &--1 {
-        // margin-top: -127px;
-      }
     }
     &__image {
       position: relative;
@@ -348,10 +347,6 @@ body {
       }
       &--desktop {
         display: none;
-      }
-      &--mobile-big {
-        // margin-top: -65px;
-        // max-width: 240px;
       }
     }
     &__text {
@@ -890,19 +885,6 @@ body {
     }
   }
 
-  @media screen and (min-width: 340px) {
-    .es-info {
-      &__text {
-        &--2 {
-          margin-left: 32%;
-        }
-        &--3 {
-          margin-left: 34%;
-        }
-      }
-    }
-  }
-
   @media screen and (min-width: 360px) {
     .es-ingr {
       &__container {
@@ -923,10 +905,13 @@ body {
     .es-info {
       &__text {
         &--2 {
-          margin-left: 30%;
+          margin-left: 22%;
         }
         &--3 {
-          margin-left: 32%;
+          margin-left: 22%;
+        }
+        &--4 {
+          margin-left: 7%;
         }
       }
     }
@@ -941,16 +926,6 @@ body {
   }
 
   @media screen and (min-width: 450px) {
-    .es-info {
-      &__text {
-        &--2 {
-          margin-left: 23%;
-        }
-        &--3 {
-          margin-left: 26%;
-        }
-      }
-    }
     .es-ingr {
       &__container {
         &::before {
@@ -984,10 +959,10 @@ body {
     .es-info {
       &__text {
         &--2 {
-          margin-left: 23%;
+          margin-left: 17%;
         }
         &--3 {
-          margin-left: 23%;
+          margin-left: 18%;
         }
       }
     }
@@ -1045,21 +1020,36 @@ body {
 
     .es-info {
       &__wrapper {
+        min-height: 382px;
         background: #fff url(images/info-image.png) -70px -20px no-repeat;
         background-size: contain;
       }
       &__text {
         &--1 {
           margin-left: 26%;
+          &::before {
+            display: block;
+          }
         }
         &--2 {
-          margin-left: 40%;
+          margin-left: 42%;
+          &::before {
+            display: block;
+          }
         }
         &--3 {
-          margin-left: 43%;
+          margin-top: 80px;
+          margin-left: 45%;
+          &::before {
+            display: block;
+          }
         }
         &--4 {
+          margin-top: 60px;
           margin-left: 30%;
+          &::before {
+            display: block;
+          }
         }
       }
     }
@@ -1219,10 +1209,10 @@ body {
       }
       &__text {
         &--2 {
-          margin-left: 35%;
+          margin-left: 38%;
         }
         &--3 {
-          margin-left: 36%;
+          margin-left: 40%;
         }
       }
     }
@@ -1241,7 +1231,6 @@ body {
         justify-content: space-between;
         align-items: center;
         background: none;
-        // background-size: contain;
       }
       &__image {
         &--desktop {
