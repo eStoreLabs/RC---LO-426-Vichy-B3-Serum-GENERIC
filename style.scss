@@ -187,6 +187,11 @@ body {
 
     &__steps-item {
       margin-bottom: 40px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     &__text {
@@ -1115,6 +1120,7 @@ body {
 
       .es-ingr__slides .es-ingr__single:hover {
         opacity: 1;
+        transform: scale(1.2);
       }
 
       &__img {

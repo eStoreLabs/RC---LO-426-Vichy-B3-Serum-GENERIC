@@ -180,6 +180,10 @@ body {
 }
 #es-vichy.es-vichy .es-info__steps-item {
   margin-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+}
+#es-vichy.es-vichy .es-info__steps-item:hover {
+  transform: scale(1.05);
 }
 #es-vichy.es-vichy .es-info__text {
   position: relative;
@@ -1042,6 +1046,7 @@ body {
   }
   #es-vichy.es-vichy .es-ingr .es-ingr__slides .es-ingr__single:hover {
     opacity: 1;
+    transform: scale(1.2);
   }
   #es-vichy.es-vichy .es-ingr__img {
     max-width: 200px;
