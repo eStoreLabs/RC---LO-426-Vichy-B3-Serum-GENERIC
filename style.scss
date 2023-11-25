@@ -730,6 +730,7 @@ body {
       margin: 0 auto;
       width: 100%;
       object-fit: cover;
+      min-height: 647px;
     }
     &__play-button {
       position: absolute;
@@ -1079,6 +1080,7 @@ body {
         }
         &--desktop {
           display: block;
+          min-height: 507px;
         }
       }
       &__play-button {
@@ -1382,7 +1384,7 @@ body {
         max-height: 366px;
 
         &--2 {
-          max-width: 274px;
+          max-width: 260px;
         }
         &--3 {
           max-width: 280px;
@@ -1400,7 +1402,7 @@ body {
           max-width: 250px;
 
           &::before {
-            left: 33%;
+            left: 28%;
             top: -20px;
           }
         }
